@@ -58,8 +58,11 @@ Actualmente realizo prácticas en el Área de Modernización del Gobierno Region
 ```text
 cv-web-nicol/
 ├── index.html
+├── style.css
+├── script.js
 ├── Dockerfile
 ├── docker-compose.yml
 ├── README.md
 └── img/
-    └── foto.jpg
+    └── foto.jpeg
+```
