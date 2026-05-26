@@ -1,4 +1,4 @@
-cat > README.md <<'EOF'
+
 # CV Web - Nicol Tamara Nieves Quiñonez
 
 Este proyecto es mi CV web profesional, desarrollado como parte de una actividad académica. El objetivo principal fue crear una página web responsive, con buen diseño, información personal y profesional actualizable, enlaces a redes sociales y despliegue mediante Docker.
