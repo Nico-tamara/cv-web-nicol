@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV | Nicol Tamara Nieves Quiñonez</title>
+  <meta name="description" content="CV web profesional de Nicol Tamara Nieves Quiñonez." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Logos reales de redes sociales mediante Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --accent: #14b8a6;
+      --purple: #7c3aed;
+      --dark: #0f172a;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --shadow: 0 24px 60px rgba(15, 23, 42, 0.11);
+      --radius: 26px;
+    }
+
+    [data-theme="dark"] {
+      --bg: #020617;
+      --card: #0f172a;
+      --primary: #60a5fa;
+      --primary-dark: #3b82f6;
+      --accent: #2dd4bf;
+      --purple: #a78bfa;
+      --dark: #f8fafc;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --border: #1e293b;
+      --shadow: 0 24px 60px rgba(0, 0, 0, 0.38);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.16), transparent 28%),
+        radial-gradient(circle at 90% 10%, rgba(20, 184, 166, 0.15), transparent 32%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+    }
+
+    .progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      width: 0%;
+      background: linear-gradient(90deg, var(--primary), var(--accent), var(--purple));
+      z-index: 200;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.84);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    [data-theme="dark"] header {
+      background: rgba(15, 23, 42, 0.84);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 15px 0;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--dark);
+      font-weight: 900;
+      font-size: 1.2rem;
+      letter-spacing: -0.03em;
+    }
+
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      color: #ffffff;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25);
+    }
+
+    .nav-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      justify-content: flex-end;
+    }
+
+    .nav-buttons a,
+    .nav-buttons button,
+    .btn {
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
+      padding: 10px 13px;
+      border-radius: 14px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: 0.2s ease;
+      font-size: 0.92rem;
+    }
+
+    .nav-buttons a:hover,
+    .nav-buttons button:hover,
+    .btn:hover {
+      transform: translateY(-2px);
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      border: none;
+      box-shadow: 0 16px 35px rgba(37, 99, 235, 0.25);
+    }
+
+    .btn-primary:hover {
+      color: white;
+    }
+
+    .hero {
+      padding: 70px 0 46px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(37, 99, 235, 0.1);
+      color: var(--primary);
+      border: 1px solid rgba(37, 99, 235, 0.16);
+      padding: 9px 14px;
+      border-radius: 999px;
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(2.25rem, 5vw, 4.8rem);
+      line-height: 1.04;
+      letter-spacing: -0.07em;
+      color: var(--dark);
+      margin-bottom: 20px;
+    }
+
+    h1 span {
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-description {
+      font-size: 1.06rem;
+      color: var(--muted);
+      max-width: 760px;
+      margin-bottom: 26px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .profile-card {
+      background: rgba(255, 255, 255, 0.86);
+      backdrop-filter: blur(18px);
+      border: 1px solid var(--border);
+      border-radius: 34px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+
+    [data-theme="dark"] .profile-card {
+      background: rgba(15, 23, 42, 0.86);
+    }
+
+    .profile-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 7px;
+      background: linear-gradient(90deg, var(--primary), var(--accent), var(--purple));
+    }
+
+    .profile-photo {
+      width: 190px;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 12px auto 18px;
+      border: 7px solid rgba(37, 99, 235, 0.13);
+      background: #dbeafe;
+    }
+
+    .profile-card h2 {
+      text-align: center;
+      color: var(--dark);
+      font-size: 1.5rem;
+      margin-bottom: 6px;
+    }
+
+    .role {
+      text-align: center;
+      color: var(--primary);
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 11px;
+    }
+
+    .info-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 13px;
+    }
+
+    .info-box strong {
+      display: block;
+      color: var(--dark);
+      font-size: 0.9rem;
+    }
+
+    .info-box small {
+      color: var(--muted);
+    }
+
+    .section {
+      padding: 62px 0;
+    }
+
+    .section-title {
+      margin-bottom: 28px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(1.75rem, 3vw, 2.65rem);
+      color: var(--dark);
+      letter-spacing: -0.05em;
+      margin-bottom: 8px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+      max-width: 790px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 14px 35px rgba(15, 23, 42, 0.07);
+      transition: 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .card h3 {
+      color: var(--dark);
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+
+    .card p,
+    .card li {
+      color: var(--muted);
+    }
+
+    .card ul {
+      padding-left: 18px;
+    }
+
+    .card li {
+      margin-bottom: 7px;
+    }
+
+    .tag {
+      display: inline-flex;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(20, 184, 166, 0.1);
+      color: var(--accent);
+      font-weight: 900;
+      font-size: 0.78rem;
+      margin-bottom: 12px;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 18px;
+    }
+
+    .timeline-item {
+      border-left: 4px solid var(--primary);
+      padding-left: 18px;
+    }
+
+    .timeline-item span {
+      color: var(--primary);
+      font-weight: 900;
+      font-size: 0.9rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .skill {
+      border: 1px solid rgba(37, 99, 235, 0.18);
+      background: rgba(37, 99, 235, 0.08);
+      color: var(--primary);
+      padding: 8px 11px;
+      border-radius: 999px;
+      font-weight: 900;
+      font-size: 0.84rem;
+    }
+
+    .search-panel {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px 15px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
+      outline: none;
+    }
+
+    input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+    }
+
+    .project-card {
+      min-height: 280px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 6px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+    }
+
+    footer {
+      background: #0f172a;
+      color: white;
+      padding: 50px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+
+    footer h2 {
+      font-size: 2.2rem;
+      letter-spacing: -0.04em;
+      margin-bottom: 8px;
+    }
+
+    footer p {
+      color: #cbd5e1;
+    }
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      justify-content: flex-end;
+    }
+
+    .social-link {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      color: white;
+      font-size: 1.35rem;
+      transition: 0.2s ease;
+      border: 1px solid rgba(255,255,255,0.14);
+    }
+
+    .social-link:hover {
+      transform: translateY(-4px) scale(1.04);
+    }
+
+    .linkedin { background: #0a66c2; }
+    .github { background: #24292f; }
+    .facebook { background: #1877f2; }
+    .instagram {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    }
+    .mail { background: #ea4335; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 18px;
+      color: #94a3b8;
+      text-align: center;
+      font-size: 0.92rem;
+    }
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(2, 6, 23, 0.68);
+      z-index: 300;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal.open {
+      display: flex;
+    }
+
+    .modal-card {
+      width: min(720px, 96vw);
+      max-height: 88vh;
+      overflow: auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .modal-header h2 {
+      color: var(--dark);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 13px;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    .field label {
+      display: block;
+      color: var(--dark);
+      font-weight: 900;
+      margin-bottom: 6px;
+    }
+
+    .field textarea {
+      width: 100%;
+      min-height: 120px;
+      resize: vertical;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
+      border-radius: 16px;
+      padding: 14px 15px;
+      outline: none;
+      font-family: inherit;
+    }
+
+    .toast {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      background: #0f172a;
+      color: white;
+      padding: 14px 16px;
+      border-radius: 16px;
+      font-weight: 800;
+      box-shadow: var(--shadow);
+      z-index: 400;
+      transform: translateY(130%);
+      opacity: 0;
+      transition: 0.25s ease;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    @media (max-width: 950px) {
+      .hero-grid,
+      .grid-2,
+      .grid-3,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .social-links {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .navbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-buttons {
+        justify-content: flex-start;
+      }
+
+      .info-grid,
+      .search-panel,
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 42px;
+      }
+
+      .profile-photo {
+        width: 155px;
+        height: 155px;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+      }
+    }
+
+    @media print {
+      header,
+      footer,
+      .hero-actions,
+      .search-panel,
+      .modal,
+      .toast,
+      .progress {
+        display: none !important;
+      }
+
+      body {
+        background: white;
+        color: black;
+      }
+
+      .section,
+      .hero {
+        padding: 20px 0;
+      }
+
+      .card,
+      .profile-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="#inicio">
+        <span class="brand-logo">CV</span>
+        <span>CV</span>
+      </a>
+
+      <nav class="nav-buttons">
+        <a href="#perfil">Perfil</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+        <button id="themeBtn" type="button">🌙 Tema</button>
+        <button id="editBtn" type="button">✏️ Editar</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">Curriculum Vitae</span>
+          <h1><span id="nameText">Nicol Tamara Nieves Quiñonez</span><br>Ingeniería de Sistemas</h1>
+          <p class="hero-description" id="summaryText">
+            Estudiante de Ingeniería de Sistemas, practicante en el Área de Modernización y Soporte del Gobierno Regional Huánuco.
+            Cuenta con experiencia en documentación técnica, soporte tecnológico, mejora de procesos administrativos, desarrollo web,
+            Docker y enseñanza de matemáticas en la Academia Stephen Hawking.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#perfil">Ver perfil</a>
+            <a class="btn" href="#experiencia">Ver experiencia</a>
+            <a class="btn" href="#proyectos">Ver proyectos</a>
+            <a class="btn" href="#contacto">Redes sociales</a>
+          </div>
+        </div>
+
+        <aside class="profile-card">
+          <img class="profile-photo" id="photoText" src="img/foto.jpeg" alt="Foto profesional de Nicol Tamara Nieves Quiñonez">
+          <h2 id="nameCard">Nicol Tamara Nieves Quiñonez</h2>
+          <p class="role" id="roleText">Modernización | Soporte | Docente de Matemáticas | Docker</p>
+
+          <div class="info-grid">
+            <div class="info-box">
+              <strong>Ubicación</strong>
+              <small id="locationText">Huánuco, Perú</small>
+            </div>
+            <div class="info-box">
+              <strong>Correo</strong>
+              <small id="emailText">nievesquinoneztamara@gmail.com</small>
+            </div>
+            <div class="info-box">
+              <strong>Inglés</strong>
+              <small>Intermedio</small>
+            </div>
+            <div class="info-box">
+              <strong>Enfoque</strong>
+              <small>Sistemas, soporte y educación</small>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="perfil">
+      <div class="container">
+        <div class="section-title">
+          <h2>Perfil profesional</h2>
+          <p>
+            Presentación principal del CV, organizada como una hoja inicial con botones que redirigen a las demás partes del currículum.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card">
+            <span class="tag">Perfil</span>
+            <h3>Resumen profesional</h3>
+            <p>
+              Estudiante de Ingeniería de Sistemas con experiencia en prácticas dentro del Gobierno Regional Huánuco,
+              específicamente en el Área de Modernización y también en actividades de soporte. Tiene interés en la transformación
+              digital, documentación técnica, soporte tecnológico, desarrollo web, Docker, sistemas institucionales y mejora de procesos.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="tag">Objetivo</span>
+            <h3>Objetivo profesional</h3>
+            <p>
+              Contribuir en proyectos tecnológicos que mejoren los servicios digitales, fortalezcan los procesos administrativos
+              y permitan implementar soluciones funcionales, ordenadas, seguras y fáciles de mantener.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experiencia">
+      <div class="container">
+        <div class="section-title">
+          <h2>Experiencia</h2>
+          <p>
+            Experiencia práctica, apoyo institucional, soporte y enseñanza.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="card timeline-item">
+            <span>Actualmente</span>
+            <h3>Practicante en el Área de Modernización</h3>
+            <p>
+              Gobierno Regional Huánuco. Apoyo en documentación técnica, análisis de procesos, organización de información,
+              revisión de sistemas institucionales y actividades vinculadas a transformación digital.
+            </p>
+          </article>
+
+          <article class="card timeline-item">
+            <span>Actualmente</span>
+            <h3>Apoyo en el Área de Soporte</h3>
+            <p>
+              Apoyo en tareas de soporte tecnológico, atención de incidencias, revisión de equipos, acompañamiento a usuarios
+              y apoyo en actividades relacionadas con el funcionamiento de herramientas digitales institucionales.
+            </p>
+          </article>
+
+          <article class="card timeline-item">
+            <span>Actualmente</span>
+            <h3>Maestra de Matemáticas</h3>
+            <p>
+              Academia Stephen Hawking. Enseñanza de matemáticas, explicación de ejercicios, acompañamiento académico
+              y refuerzo de conocimientos para estudiantes.
+            </p>
+          </article>
+
+          <article class="card timeline-item">
+            <span>3 meses</span>
+            <h3>Apoyo ad honorem en la Facultad de Ingeniería Industrial, de Sistemas y Mecatrónica</h3>
+            <p>
+              Apoyo en procesos administrativos y mejora de la página web institucional, colaborando con la organización
+              de información, revisión de contenido y presentación digital de información académica y administrativa.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="habilidades">
+      <div class="container">
+        <div class="section-title">
+          <h2>Habilidades técnicas</h2>
+          <p>
+            Conocimientos organizados en columnas para una lectura clara y profesional.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <span class="tag">Docker</span>
+            <h3>Docker y despliegue</h3>
+            <ul>
+              <li>Creación de imágenes con Dockerfile.</li>
+              <li>Despliegue de páginas web con Nginx.</li>
+              <li>Uso de contenedores y mapeo de puertos.</li>
+              <li>Uso de Docker Compose para servicios.</li>
+              <li>Buenas prácticas de organización de proyectos.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="tag">Web</span>
+            <h3>Desarrollo web</h3>
+            <ul>
+              <li>HTML5, CSS3 y JavaScript.</li>
+              <li>Diseño responsive para celular, tablet y laptop.</li>
+              <li>Uso de componentes visuales y navegación interna.</li>
+              <li>Interfaces web modernas y ordenadas.</li>
+              <li>Edición dinámica con JavaScript.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="tag">Sistemas</span>
+            <h3>Sistemas y soporte</h3>
+            <ul>
+              <li>Documentación técnica y manuales de usuario.</li>
+              <li>Análisis de procesos administrativos.</li>
+              <li>Soporte tecnológico a usuarios.</li>
+              <li>Git, GitHub y control de versiones.</li>
+              <li>PostgreSQL, Laravel y Vue a nivel académico/proyecto.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="skills">
+          <span class="skill">Docker</span>
+          <span class="skill">Nginx</span>
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">GitHub</span>
+          <span class="skill">Laravel</span>
+          <span class="skill">Vue</span>
+          <span class="skill">PostgreSQL</span>
+          <span class="skill">Soporte técnico</span>
+          <span class="skill">Matemáticas</span>
+          <span class="skill">Documentación</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section-title">
+          <h2>Proyectos y áreas destacadas</h2>
+          <p>
+            Puedes usar el buscador para filtrar proyectos o temas del CV.
+          </p>
+        </div>
+
+        <div class="search-panel">
+          <input type="search" id="searchInput" placeholder="Buscar: Docker, SGD, Auth, Matemáticas, Soporte, Firma electrónica..." />
+          <button class="btn btn-primary" id="resetSearch" type="button">Ver todo</button>
+        </div>
+
+        <div class="grid-3" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="referencias">
+      <div class="container">
+        <div class="section-title">
+          <h2>Referencias</h2>
+          <p>
+            Espacio para colocar docentes, supervisores, jefes inmediatos o personas que puedan brindar referencia profesional.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <span class="tag">Referencia 1</span>
+            <h3>Nombre del referente</h3>
+            <p>Cargo: Docente / Supervisor / Jefe inmediato</p>
+            <p>Institución: [Agregar institución]</p>
+            <p>Contacto: [Agregar correo o teléfono]</p>
+          </article>
+
+          <article class="card">
+            <span class="tag">Referencia 2</span>
+            <h3>Nombre del referente</h3>
+            <p>Cargo: Docente / Supervisor / Jefe inmediato</p>
+            <p>Institución: [Agregar institución]</p>
+            <p>Contacto: [Agregar correo o teléfono]</p>
+          </article>
+
+          <article class="card">
+            <span class="tag">Referencia 3</span>
+            <h3>Nombre del referente</h3>
+            <p>Cargo: Docente / Supervisor / Jefe inmediato</p>
+            <p>Institución: [Agregar institución]</p>
+            <p>Contacto: [Agregar correo o teléfono]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <div class="container footer-grid">
+      <div>
+        <h2>CV</h2>
+        <p>
+          Nicol Tamara Nieves Quiñonez — Ingeniería de Sistemas, Modernización, Soporte, Docker,
+          desarrollo web y enseñanza de matemáticas.
+        </p>
+      </div>
+
+      <div class="social-links" aria-label="Redes sociales">
+        <a class="social-link linkedin" href="https://www.linkedin.com/in/nicol-tamara-nieves-qui%C3%B1onez-8965b8332" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a class="social-link github" href="https://github.com/Nico-tamara" target="_blank" rel="noopener noreferrer" title="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a class="social-link facebook" href="https://www.facebook.com/share/1BGDkCnNkf/" target="_blank" rel="noopener noreferrer" title="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a class="social-link instagram" href="https://www.instagram.com/nicotamara1/" target="_blank" rel="noopener noreferrer" title="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a class="social-link mail" href="mailto:nievesquinoneztamara@gmail.com" title="Correo">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      © 2026 Nicol Tamara Nieves Quiñonez. CV web responsive.
+    </div>
+  </footer>
+
+  <div class="modal" id="editModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2>Editar información principal</h2>
+        <button class="btn" type="button" id="closeModal">Cerrar</button>
+      </div>
+
+      <form class="form-grid" id="editForm">
+        <div class="field">
+          <label>Nombre</label>
+          <input id="inputName">
+        </div>
+
+        <div class="field">
+          <label>Rol</label>
+          <input id="inputRole">
+        </div>
+
+        <div class="field">
+          <label>Correo</label>
+          <input id="inputEmail">
+        </div>
+
+        <div class="field">
+          <label>Ubicación</label>
+          <input id="inputLocation">
+        </div>
+
+        <div class="field full">
+          <label>Ruta o URL de foto</label>
+          <input id="inputPhoto">
+        </div>
+
+        <div class="field full">
+          <label>Resumen</label>
+          <textarea id="inputSummary"></textarea>
+        </div>
+
+        <div class="field full">
+          <button class="btn btn-primary" type="submit">Guardar cambios</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Cambios guardados</div>
+
+  <script>
+    const STORAGE_KEY = "cv_nicol_tamara_actualizado";
+
+    const defaultProfile = {
+      name: "Nicol Tamara Nieves Quiñonez",
+      role: "Modernización | Soporte | Docente de Matemáticas | Docker",
+      email: "nievesquinoneztamara@gmail.com",
+      location: "Huánuco, Perú",
+      photo: "img/foto.jpeg",
+      summary: "Estudiante de Ingeniería de Sistemas, practicante en el Área de Modernización y Soporte del Gobierno Regional Huánuco. Cuenta con experiencia en documentación técnica, soporte tecnológico, mejora de procesos administrativos, desarrollo web, Docker y enseñanza de matemáticas en la Academia Stephen Hawking."
+    };
+
+    const projects = [
+      {
+        tag: "Gobierno Regional Huánuco",
+        title: "Área de Modernización",
+        text: "Apoyo en documentación técnica, análisis de procesos, organización de información y actividades vinculadas a transformación digital.",
+        items: ["Modernización", "Gestión pública", "Procesos administrativos", "Documentación"]
+      },
+      {
+        tag: "Soporte",
+        title: "Área de Soporte",
+        text: "Apoyo en atención de incidencias, revisión de equipos, orientación a usuarios y acompañamiento en herramientas digitales.",
+        items: ["Soporte técnico", "Usuarios", "Incidencias", "Herramientas digitales"]
+      },
+      {
+        tag: "Educación",
+        title: "Maestra de Matemáticas",
+        text: "Enseñanza de matemáticas en la Academia Stephen Hawking, con explicación de ejercicios y refuerzo académico.",
+        items: ["Matemáticas", "Academia Stephen Hawking", "Enseñanza", "Refuerzo"]
+      },
+      {
+        tag: "Docker",
+        title: "CV web desplegable con Docker",
+        text: "Proyecto preparado para ejecutarse en un contenedor Nginx usando Dockerfile y Docker Compose.",
+        items: ["Dockerfile", "Nginx", "docker compose", "Puerto 8081"]
+      },
+      {
+        tag: "Web",
+        title: "Diseño responsive",
+        text: "Interfaz adaptable para computadora, tablet y celular, con botones de navegación interna y secciones ordenadas.",
+        items: ["HTML", "CSS", "JavaScript", "Responsive"]
+      },
+      {
+        tag: "Auth Service",
+        title: "Documentación de autenticación",
+        text: "Participación académica en documentación de servicio de logueo único, modelos, endpoints, stores y manual de usuario.",
+        items: ["Laravel", "Vue", "API REST", "Manual"]
+      },
+      {
+        tag: "SGD",
+        title: "Sistema de Gestión Documental",
+        text: "Análisis de módulos, flujos de derivación, vistos buenos, expedientes y procesos documentarios institucionales.",
+        items: ["Documentos", "Derivaciones", "Vistos buenos", "Expedientes"]
+      },
+      {
+        tag: "Firma electrónica",
+        title: "Tutorial de validación",
+        text: "Guion y estructura de video para explicar firma electrónica, firma visible y validación de documentos firmados.",
+        items: ["Firma digital", "Validación", "Capacitación", "Buenas prácticas"]
+      },
+      {
+        tag: "Simulación",
+        title: "Proyectos académicos de simulación",
+        text: "Modelos de atención, tiempos de espera, tráfico y procesos usando herramientas de simulación.",
+        items: ["Arena", "AnyLogic", "FlexSim", "Vensim"]
+      }
+    ];
+
+    let profile = loadProfile();
+
+    function $(id) {
+      return document.getElementById(id);
+    }
+
+    function loadProfile() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+        return saved ? { ...defaultProfile, ...saved } : defaultProfile;
+      } catch (error) {
+        return defaultProfile;
+      }
+    }
+
+    function saveProfile() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(profile));
+    }
+
+    function applyProfile() {
+      $("nameText").textContent = profile.name;
+      $("nameCard").textContent = profile.name;
+      $("roleText").textContent = profile.role;
+      $("emailText").textContent = profile.email;
+      $("locationText").textContent = profile.location;
+      $("summaryText").textContent = profile.summary;
+      $("photoText").src = profile.photo;
+
+      $("inputName").value = profile.name;
+      $("inputRole").value = profile.role;
+      $("inputEmail").value = profile.email;
+      $("inputLocation").value = profile.location;
+      $("inputPhoto").value = profile.photo;
+      $("inputSummary").value = profile.summary;
+    }
+
+    function renderProjects(filter = "") {
+      const query = filter.trim().toLowerCase();
+
+      const filtered = projects.filter((project) => {
+        const content = `${project.tag} ${project.title} ${project.text} ${project.items.join(" ")}`.toLowerCase();
+        return content.includes(query);
+      });
+
+      $("projectGrid").innerHTML = filtered.map((project) => `
+        <article class="card project-card">
+          <span class="tag">${project.tag}</span>
+          <h3>${project.title}</h3>
+          <p>${project.text}</p>
+          <ul>
+            ${project.items.map(item => `<li>${item}</li>`).join("")}
+          </ul>
+        </article>
+      `).join("");
+    }
+
+    function showToast(message) {
+      $("toast").textContent = message;
+      $("toast").classList.add("show");
+      setTimeout(() => $("toast").classList.remove("show"), 2200);
+    }
+
+    function updateProgress() {
+      const height = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = height > 0 ? (window.scrollY / height) * 100 : 0;
+      $("progress").style.width = `${progress}%`;
+    }
+
+    $("themeBtn").addEventListener("click", () => {
+      const isDark = document.body.getAttribute("data-theme") === "dark";
+      document.body.setAttribute("data-theme", isDark ? "light" : "dark");
+      $("themeBtn").textContent = isDark ? "🌙 Tema" : "☀️ Tema";
+    });
+
+    $("editBtn").addEventListener("click", () => {
+      $("editModal").classList.add("open");
+    });
+
+    $("closeModal").addEventListener("click", () => {
+      $("editModal").classList.remove("open");
+    });
+
+    $("editModal").addEventListener("click", (event) => {
+      if (event.target === $("editModal")) {
+        $("editModal").classList.remove("open");
+      }
+    });
+
+    $("editForm").addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      profile = {
+        name: $("inputName").value,
+        role: $("inputRole").value,
+        email: $("inputEmail").value,
+        location: $("inputLocation").value,
+        photo: $("inputPhoto").value,
+        summary: $("inputSummary").value
+      };
+
+      saveProfile();
+      applyProfile();
+      $("editModal").classList.remove("open");
+      showToast("Información actualizada");
+    });
+
+    $("searchInput").addEventListener("input", (event) => {
+      renderProjects(event.target.value);
+    });
+
+    $("resetSearch").addEventListener("click", () => {
+      $("searchInput").value = "";
+      renderProjects();
+      showToast("Mostrando todos los proyectos");
+    });
+
+    window.addEventListener("scroll", updateProgress);
+
+    applyProfile();
+    renderProjects();
+    updateProgress();
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  cv-web:
+    build: .
+    container_name: cv-web-nicol
+    ports:
+      - "8081:80"
+    restart: unless-stopped
